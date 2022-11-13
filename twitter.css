@@ -1,0 +1,81 @@
+p,
+div,
+.row,
+a,
+span,
+p,
+body,
+svg,
+img,
+li,
+ul,
+textarea {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+    color: white;
+}
+
+.main {
+    display: flex;
+}
+
+.maincontainer {
+    border: solid 1px grey;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leftbox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    font-size: 18px;
+}
+
+.explore,
+.logo,
+.setting {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.setting>svg {
+    margin-right: 10px;
+}
+
+.searchbox {
+    margin-top: 20px;
+    width: 80%;
+    background-color: gray;
+    border-radius: 200px;
+    padding: 5px;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.searchbox>svg {
+    margin: 10px;
+    width: 3%;
+}
+
+.searchbox>textarea {
+    color: white;
+    padding: 8px;
+    width: 97%;
+    border-radius: 200px;
+    resize: none;
+    background-color: transparent;
+    border: none;
+}
