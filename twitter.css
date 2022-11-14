@@ -26,6 +26,7 @@ body {
 
 .maincontainer {
     border: solid 1px grey;
+    border-bottom: none;
     height: 100vh;
 }
 
@@ -125,6 +126,7 @@ a {
 
 .wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 10px 40px;
@@ -144,7 +146,7 @@ a {
     background-color: white;
     opacity: 0.6;
     color: black;
-    padding-left: 10px;
+    padding: 10px;
 }
 
 .banner>div>p {
@@ -152,10 +154,46 @@ a {
     font-size: 28px;
 }
 
-.banner>div>p:first-child {
+.banner>div>p:first-child,
+.top-news>p:first-child,
+.trending>p:first-child {
     font-size: 14px;
 }
 
-.banner>div>p:last-child {
+.banner>div>p:last-child,
+.top-news>p:last-child,
+.trending>p:last-child {
     font-size: 14px;
+}
+
+.top-news-wrapper {
+    overflow: hidden;
+    width: 90%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #161A15;
+    color: gray;
+    font-size: 400;
+    display: flex;
+}
+
+.top-news>p {
+    margin: 5px 0px;
+}
+
+.top-news>p:nth-child(2),
+.trending>p:nth-child(2) {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.top-news>p:last-child>a {
+    color: rgb(0, 128, 255) !important;
+    text-decoration: none;
+}
+
+.top-news-image>img {
+    border-radius: 10px;
+    width: 100%;
 }
