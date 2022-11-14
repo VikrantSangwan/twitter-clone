@@ -122,3 +122,40 @@ a {
 .nav-tabs {
     border-bottom: none !important;
 }
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.banner {
+    background: url('https://imgcld.yatra.com/ytimages/image/upload/t_yt_blog_c_fill_q_auto:good_f_auto_w_800_h_500/v1543910413/StatueofUnity1_1543908986.jpg');
+    height: 300px;
+    width: 90%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.banner>div {
+    background-color: white;
+    opacity: 0.6;
+    color: black;
+    padding-left: 10px;
+}
+
+.banner>div>p {
+    color: black;
+    font-size: 28px;
+}
+
+.banner>div>p:first-child {
+    font-size: 14px;
+}
+
+.banner>div>p:last-child {
+    font-size: 14px;
+}
