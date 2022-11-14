@@ -35,7 +35,6 @@ body {
 }
 
 .leftbox {
-    width: 100%;
     display: flex;
     flex-direction: column;
     padding: 0px 40px;
@@ -93,7 +92,33 @@ body {
     align-items: center;
 }
 
+.navigationbar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.nav,
+.nav-tabs {
+    justify-content: inherit !important;
+    width: 100%;
+}
 
 .searchsetting>svg {
     margin: 10px;
+}
+
+a {
+    color: gray !important;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: gray;
+    border: none;
+    background-color: inherit;
+}
+
+.nav-tabs {
+    border-bottom: none !important;
 }
