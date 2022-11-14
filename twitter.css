@@ -16,7 +16,7 @@ textarea {
 
 body {
     background-color: black;
-    height: 100vh;
+    height: 100%;
     color: white;
 }
 
@@ -27,7 +27,8 @@ body {
 .maincontainer {
     border: solid 1px grey;
     border-bottom: none;
-    height: 100vh;
+    height: 100%;
+    padding: 0 !important;
 }
 
 .leftcontainer,
@@ -36,6 +37,7 @@ body {
 }
 
 .leftbox {
+    position: fixed;
     display: flex;
     flex-direction: column;
     padding: 0px 40px;
@@ -125,6 +127,7 @@ a {
 }
 
 .wrapper {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -134,7 +137,7 @@ a {
 
 .banner {
     background: url('https://imgcld.yatra.com/ytimages/image/upload/t_yt_blog_c_fill_q_auto:good_f_auto_w_800_h_500/v1543910413/StatueofUnity1_1543908986.jpg');
-    height: 300px;
+    /* height: 300px; */
     width: 90%;
     background-repeat: no-repeat;
     display: flex;
@@ -147,6 +150,7 @@ a {
     opacity: 0.6;
     color: black;
     padding: 10px;
+    margin-top: 200px;
 }
 
 .banner>div>p {
@@ -196,4 +200,70 @@ a {
 .top-news-image>img {
     border-radius: 10px;
     width: 100%;
+}
+
+.cricket-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    border: solid 1px gray;
+    border-left: 0px;
+    border-right: 0px;
+    margin: 10px 0px;
+}
+
+.people {
+    padding: 10px;
+    width: 90%;
+    /* border: solid 1px red; */
+}
+
+.profilephoto>img {
+    width: 80%;
+    border-radius: 50%;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.profile {
+    margin-left: 0;
+
+}
+
+.profilename {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+
+.profilename>svg {
+    margin-left: 5px;
+}
+
+.profilename>p,
+.profilename>a {
+    color: gray;
+    margin-left: 6px;
+}
+
+.options {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 50px;
+    color: gray;
+    /* border: solid 1px red; */
+}
+
+.options>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.options>div>svg {
+    margin-right: 5px;
 }
