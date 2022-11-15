@@ -78,7 +78,7 @@ body {
 .logincontainer {
     position: fixed;
     bottom: 1%;
-    left: 5%;
+    left: 8%;
     background-color: #161A15;
     border-radius: 50px;
     font-size: 16px;
@@ -87,6 +87,49 @@ body {
     padding: 5px 10px;
     align-items: center;
     margin-top: 50px;
+}
+
+.followsection {
+    background-color: #161A15;
+    font-size: 16px;
+    color: white;
+    border-radius: 10px;
+    margin: 20px 10px;
+    width: 90%;
+}
+
+.followsection>p {
+    font-size: 24px;
+    padding: 5px 20px;
+    font-weight: 600;
+}
+
+.whotofollow {
+    display: flex;
+    padding: 15px 10px;
+    align-items: center;
+}
+
+.whotofollow>div {
+    margin: 0px 10px;
+}
+
+
+.follow {
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+
+.loginname {
+    width: 50%;
+}
+
+.whotofollow>.loginimage {
+    width: 15%;
+}
+
+.followbtn {
+    width: 30%;
 }
 
 .loginname>p:last-child {
