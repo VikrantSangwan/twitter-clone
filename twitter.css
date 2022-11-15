@@ -50,6 +50,13 @@ body {
     font-size: 20px;
 }
 
+.rightbox {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+
+}
+
 .explore,
 .logo,
 .setting {
