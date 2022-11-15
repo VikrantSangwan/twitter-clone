@@ -36,12 +36,18 @@ body {
     margin-top: 20px;
 }
 
+.leftcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
 .leftbox {
     position: fixed;
     display: flex;
     flex-direction: column;
     padding: 0px 40px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .explore,
@@ -51,10 +57,22 @@ body {
     align-items: center;
     padding: 10px;
     font-weight: 600;
+    margin-top: 10px;
 }
 
 .setting>svg {
     margin-right: 10px;
+}
+
+
+.tweet {
+    padding: 10px 80px;
+    margin-top: 15px;
+    border-radius: 50px;
+    background-color: #1A8CD8;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .searchbox-wrapper {
