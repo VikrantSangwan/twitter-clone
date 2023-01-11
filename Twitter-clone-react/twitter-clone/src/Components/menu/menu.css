@@ -1,15 +1,23 @@
 .leftcontainer {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
+    margin: 0 !important;
+    padding-left: 60px;
+}
+
+@media screen and (min-width:1400px) {
+    .leftcontainer {
+        align-items: flex-end;
+    }
 }
 
 .leftbox {
     position: fixed;
     display: flex;
     flex-direction: column;
-    padding: 0px 60px;
-    font-size: 26px;
+    font-size: 20px;
+    margin: 0 !important;
 }
 
 .explore,
@@ -19,8 +27,12 @@
     align-items: center;
     padding: 10px;
     font-weight: 600;
-    margin-top: 4px;
     opacity: 0.8;
+}
+
+
+.explore>svg {
+    margin-right: 20px;
 }
 
 .setting>svg {
@@ -28,48 +40,47 @@
 }
 
 .tweet {
-    padding: 12px 110px;
-    margin-top: 15px;
+    padding: 12px 90px;
+    margin-top: 12px;
     border-radius: 50px;
     background-color: #1A8CD8;
     color: white;
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .logincontainer {
-    width: 280px;
-    position: fixed;
-    bottom: 1%;
-    left: 4%;
-    background-color: #161A15;
+    position: relative;
+    margin-top: 20px;
+    width: 260px;
+    /* background-color: #161A15; */
     border-radius: 50px;
     font-size: 16px;
     color: white;
     display: flex;
     align-items: center;
-    margin-top: 50px;
-    padding: 8px;
+    padding: 4px;
 }
 
 .loginimage {
     background-color: #33691E;
-    padding: 15px 20px;
+    padding: 6px 12px;
     margin: 2px 8px;
     border-radius: 50%;
 }
 
 .loginbtn {
     margin: 10px;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 .loginname>p {
     padding: 0;
-    margin: 3px;
+    margin: 2px;
 }
 
 .loginname>p:last-child {
+    font-size: 14px;
     color: #71767B;
 }
 

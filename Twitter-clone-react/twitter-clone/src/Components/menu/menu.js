@@ -8,8 +8,8 @@ function Menu() {
         <div className="logo">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
+            width="30"
+            height="30"
             fill="currentColor"
             className="bi bi-twitter"
             viewBox="0 0 16 16"
@@ -20,8 +20,8 @@ function Menu() {
         <div className="explore">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
+            width="30"
+            height="30"
             fill="currentColor"
             className="bi bi-hash"
             viewBox="0 0 16 16"
@@ -137,13 +137,10 @@ function Menu() {
               width="16"
               height="16"
               fill="currentColor"
-              className="bi bi-chevron-up"
+              class="bi bi-three-dots"
               viewBox="0 0 16 16"
             >
-              <path
-                fill-rule="evenodd"
-                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
-              />
+              <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
             </svg>
           </div>
         </div>
