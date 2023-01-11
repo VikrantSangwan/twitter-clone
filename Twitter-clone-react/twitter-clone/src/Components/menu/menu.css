@@ -1,0 +1,78 @@
+.leftcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.leftbox {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 60px;
+    font-size: 26px;
+}
+
+.explore,
+.logo,
+.setting {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-weight: 600;
+    margin-top: 4px;
+    opacity: 0.8;
+}
+
+.setting>svg {
+    margin-right: 25px;
+}
+
+.tweet {
+    padding: 12px 110px;
+    margin-top: 15px;
+    border-radius: 50px;
+    background-color: #1A8CD8;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.logincontainer {
+    width: 280px;
+    position: fixed;
+    bottom: 1%;
+    left: 4%;
+    background-color: #161A15;
+    border-radius: 50px;
+    font-size: 16px;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    padding: 8px;
+}
+
+.loginimage {
+    background-color: #33691E;
+    padding: 15px 20px;
+    margin: 2px 8px;
+    border-radius: 50%;
+}
+
+.loginbtn {
+    margin: 10px;
+    margin-left: 40px;
+}
+
+.loginname>p {
+    padding: 0;
+    margin: 3px;
+}
+
+.loginname>p:last-child {
+    color: #71767B;
+}
+
+.loginname {
+    width: 50%;
+}

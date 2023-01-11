@@ -1,0 +1,218 @@
+.maincontainer {
+    border: solid 1px grey;
+    border-bottom: none;
+    height: 100%;
+    padding: 0 !important;
+}
+
+
+.searchbox-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchbox {
+    margin-top: 20px;
+    width: 80%;
+    background-color: #404040;
+    border-radius: 200px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.searchbox>svg {
+    margin: 10px;
+    width: 3%;
+}
+
+.searchbox>input {
+    color: white;
+    padding: 8px;
+    width: 97%;
+    border-radius: 200px;
+    background-color: inherit;
+    border: none;
+    outline: none;
+}
+
+.searchsetting {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navigationbar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.nav,
+.nav-tabs {
+    justify-content: inherit !important;
+    width: 100%;
+}
+
+.searchsetting>svg {
+    margin: 10px;
+}
+
+a {
+    color: gray !important;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: gray;
+    border: none;
+    background-color: inherit;
+}
+
+.nav-tabs {
+    border-bottom: none !important;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.banner {
+    background: url('https://imgcld.yatra.com/ytimages/image/upload/t_yt_blog_c_fill_q_auto:good_f_auto_w_800_h_500/v1543910413/StatueofUnity1_1543908986.jpg');
+    /* height: 300px; */
+    width: 90%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.banner>div {
+    background-color: white;
+    opacity: 0.6;
+    color: black;
+    padding: 10px;
+    margin-top: 200px;
+}
+
+.banner>div>p {
+    color: black;
+    font-size: 28px;
+}
+
+.banner>div>p:first-child,
+.top-news>p:first-child,
+.trending>p:first-child {
+    font-size: 14px;
+}
+
+.banner>div>p:last-child,
+.top-news>p:last-child,
+.trending>p:last-child {
+    font-size: 14px;
+}
+
+.top-news-wrapper {
+    overflow: hidden;
+    width: 90%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #161A15;
+    color: gray;
+    font-size: 400;
+    display: flex;
+}
+
+.top-news>p {
+    margin: 5px 0px;
+}
+
+.top-news>p:nth-child(2),
+.trending>p:nth-child(2) {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.top-news>p:last-child>a {
+    color: rgb(0, 128, 255) !important;
+    text-decoration: none;
+}
+
+.top-news-image>img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.cricket-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    border: solid 1px gray;
+    border-left: 0px;
+    border-right: 0px;
+    margin: 10px 0px;
+}
+
+.people {
+    padding: 10px;
+    width: 90%;
+    /* border: solid 1px red; */
+}
+
+.profilephoto>img {
+    width: 80%;
+    border-radius: 50%;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.profile {
+    margin-left: 0;
+
+}
+
+.profilename {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+
+.profilename>svg {
+    margin-left: 5px;
+}
+
+.profilename>p,
+.profilename>a {
+    color: gray;
+    margin-left: 6px;
+}
+
+.options {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 50px;
+    color: gray;
+    /* border: solid 1px red; */
+}
+
+.options>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.options>div>svg {
+    margin-right: 5px;
+}

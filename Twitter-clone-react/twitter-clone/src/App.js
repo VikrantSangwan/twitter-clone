@@ -1,9 +1,23 @@
 import "./App.css";
-import menu from "./Components/menu/menu";
-import follow from "./Components/follow/follow";
-import posts from "./Components/posts/posts";
+import React from "react";
+import Menu from "./Components/Menu/Menu";
+import Following from "./Components/Following/Following";
+import Posts from "./Components/Posts/Posts";
+
 function App() {
-  return <h1>This is twitter-clone</h1>;
+  return (
+    <div className="row home">
+      <div className="col-3">
+        <Menu />
+      </div>
+      <div className="col-6">
+        <Posts />
+      </div>
+      <div className="col-3">
+        <Following />
+      </div>
+    </div>
+  );
 }
 
 export default App;
