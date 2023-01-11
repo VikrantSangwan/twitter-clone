@@ -5,45 +5,6 @@
     padding: 0 !important;
 }
 
-
-.searchbox-wrapper {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.searchbox {
-    margin-top: 20px;
-    width: 80%;
-    background-color: #404040;
-    border-radius: 200px;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-}
-
-.searchbox>svg {
-    margin: 10px;
-    width: 3%;
-}
-
-.searchbox>input {
-    color: white;
-    padding: 8px;
-    width: 97%;
-    border-radius: 200px;
-    background-color: inherit;
-    border: none;
-    outline: none;
-}
-
-.searchsetting {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-}
-
 .navigationbar {
     display: flex;
     width: 100%;
