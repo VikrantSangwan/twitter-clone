@@ -14,11 +14,18 @@
     }
 }
 
+.fixedsearchbox {
+    position: fixed;
+    width: 385px;
+    z-index: 999999;
+    background-color: black;
+}
+
 .searchbox {
     display: flex;
     width: 100%;
     padding: 4px;
-    margin-top: 10px;
+    margin: 10px 0px;
     align-items: center;
     background-color: #404040;
     border-radius: 200px;
@@ -38,6 +45,10 @@
     background-color: inherit;
     border: none;
     outline: none;
+}
+
+.othersections {
+    margin-top: 50px;
 }
 
 .box {
@@ -124,4 +135,21 @@ a {
     padding: 4px 20px;
     border-radius: 20px;
     border: none;
+}
+
+.links {
+    margin-top: 20px;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.links>div {
+    width: 100%;
+}
+
+.links>div>a {
+    font-size: 14px;
+    color: gray !important;
+    padding-right: 15px;
 }
