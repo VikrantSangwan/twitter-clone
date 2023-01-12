@@ -6,14 +6,14 @@ import Posts from "./Components/Posts/Posts";
 
 function App() {
   return (
-    <div className="row home">
-      <div className="col-3">
+    <div className="home">
+      <div className="menu-width">
         <Menu />
       </div>
-      <div className="col-6">
+      <div className="posts-width">
         <Posts />
       </div>
-      <div className="col-3">
+      <div className="following-width">
         <Following />
       </div>
     </div>

@@ -17,63 +17,103 @@ function Following() {
         </svg>
         <input type="text" placeholder="Search Twitter" />
       </div>
-      <div className="newhappening">
+      <div className="box">
         <h5>What's happening</h5>
-        <div className="feed">
-          <div className="feed-desc">
-            <p> Entertainment. Trending</p>
-            <p className="hashtag">#kabbadi</p>
-            <p>29.8k Tweets</p>
+        <div className="feed-wrapper">
+          <div className="feed">
+            <div className="feed-desc">
+              <p> Entertainment. Trending</p>
+              <p className="hashtag">#kabbadi</p>
+              <p>29.8k Tweets</p>
+            </div>
+            <div className="feed-logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-three-dots"
+                viewBox="0 0 16 16"
+              >
+                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+              </svg>
+            </div>
           </div>
-          <div className="feed-logo">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-three-dots"
-              viewBox="0 0 16 16"
-            >
-              <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
-            </svg>
+          <div className="feed">
+            <div className="feed-desc">
+              <p> Entertainment. Trending</p>
+              <p className="hashtag">#kabbadi</p>
+              <p>29.8k Tweets</p>
+            </div>
+            <div className="feed-logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-three-dots"
+                viewBox="0 0 16 16"
+              >
+                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+              </svg>
+            </div>
+          </div>
+          <div className="feed">
+            <div className="feed-desc">
+              <p> Entertainment. Trending</p>
+              <p className="hashtag">#kabbadi</p>
+              <p>29.8k Tweets</p>
+            </div>
+            <div className="feed-logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-three-dots"
+                viewBox="0 0 16 16"
+              >
+                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+              </svg>
+            </div>
           </div>
         </div>
-        <div className="feed">
-          <div className="feed-desc">
-            <p> Entertainment. Trending</p>
-            <p className="hashtag">#kabbadi</p>
-            <p>29.8k Tweets</p>
+        <a href="">Show more</a>
+      </div>
+      <div className="box">
+        <h5>Who to follow</h5>
+        <div className="tofollow">
+          <div className="col-2 tofollowimg">
+            <img
+              src="https://pbs.twimg.com/profile_images/1562753500726976514/EPSUNyR3_400x400.jpg"
+              alt="image"
+            />
           </div>
-          <div className="feed-logo">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-three-dots"
-              viewBox="0 0 16 16"
-            >
-              <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
-            </svg>
+          <div className="col-5 people-desc">
+            <p>Virat kohli</p>
+            <p>@imVkohli</p>
+          </div>
+          <div className="col-5 follow-btn">
+            <div>
+              <button className="peoplefollowbtn"> follow</button>
+            </div>
           </div>
         </div>
-        <div className="feed">
-          <div className="feed-desc">
-            <p> Entertainment. Trending</p>
-            <p className="hashtag">#kabbadi</p>
-            <p>29.8k Tweets</p>
+        <div className="tofollow">
+          <div className="col-2 tofollowimg">
+            <img
+              src="https://pbs.twimg.com/profile_images/1562753500726976514/EPSUNyR3_400x400.jpg"
+              alt="image"
+            />
           </div>
-          <div className="feed-logo">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-three-dots"
-              viewBox="0 0 16 16"
-            >
-              <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
-            </svg>
+          <div className="col-5 people-desc">
+            <p>President of India</p>
+            <p>@rashtrapatibhvn</p>
+          </div>
+          <div className="col-5 follow-btn">
+            <div>
+              <button className="peoplefollowbtn"> follow</button>
+            </div>
           </div>
         </div>
       </div>

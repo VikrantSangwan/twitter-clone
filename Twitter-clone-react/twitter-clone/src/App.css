@@ -3,4 +3,42 @@
   display: flex;
   justify-content: center;
   width: 100% !important;
+  height: 100%;
+}
+
+.menu-width,
+.posts-width,
+.following-width {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-width {
+  width: 30%;
+}
+
+.posts-width {
+  width: 35%;
+}
+
+.following-width {
+  width: 35%;
+}
+
+@media screen and (max-width: 1400px) {
+  .menu-width {
+    width: 25%;
+  }
+
+  .posts-width {
+    width: 50%;
+  }
+
+  .following-width {
+    width: 30%;
+    align-items: center;
+  }
+
 }

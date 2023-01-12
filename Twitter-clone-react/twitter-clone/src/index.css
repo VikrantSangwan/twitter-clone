@@ -6,6 +6,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  height: 100%;
 }
 
 code {
@@ -18,4 +20,8 @@ div,
 span,
 svg {
   color: white;
+}
+
+a {
+  color: #1E8DD8 !important;
 }
