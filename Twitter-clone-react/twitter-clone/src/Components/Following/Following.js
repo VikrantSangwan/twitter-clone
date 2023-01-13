@@ -80,6 +80,44 @@ function Following() {
                 </svg>
               </div>
             </div>
+            <div className="feed">
+              <div className="feed-desc">
+                <p> Business and Finance. Trending</p>
+                <p className="hashtag">##Infosys</p>
+                <p>29.8k Tweets</p>
+              </div>
+              <div className="feed-logo">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-three-dots"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                </svg>
+              </div>
+            </div>
+            <div className="feed">
+              <div className="feed-desc">
+                <p> Entertainment. Trending</p>
+                <p className="hashtag">श्री राम</p>
+                <p>29.8k Tweets</p>
+              </div>
+              <div className="feed-logo">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-three-dots"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                </svg>
+              </div>
+            </div>
           </div>
           <a href="">Show more</a>
         </div>
