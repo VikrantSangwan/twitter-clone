@@ -5,9 +5,11 @@ import "./Menu.css";
 
 function Menu() {
   const navigate = useNavigate();
+
   function morebtn() {
     navigate("/more");
   }
+
   return (
     <div className="leftcontainer">
       <div className="leftbox">
