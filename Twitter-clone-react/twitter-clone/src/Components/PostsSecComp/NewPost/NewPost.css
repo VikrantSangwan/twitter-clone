@@ -1,0 +1,78 @@
+.profilephoto>img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.newpost {
+    margin-left: 0;
+    padding-left: 16px;
+}
+
+.profilename {
+    display: flex;
+    /* padding: 2px; */
+}
+
+.profilename>svg {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.profilename>p,
+.profilename>a {
+    color: gray;
+    margin: 0;
+    padding: 0px 4px;
+}
+
+.postdesc {
+    margin: 0;
+    padding-right: 10px;
+}
+
+.options {
+    display: flex;
+    color: gray;
+    margin-top: 10px;
+    /* border: solid 1px red; */
+}
+
+.additionalupload {
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px 0px;
+    border: solid 1px #353935;
+}
+
+.additionalupload>img,
+.additionalupload>video {
+    width: 100%;
+}
+
+.adiditionaluploaddesc {
+    padding: 15px;
+}
+
+.adiditionaluploaddesc>p,
+.adiditionaluploaddesc>h6 {
+    color: gray;
+    margin: 0;
+}
+
+.adiditionaluploaddesc>h6 {
+    color: white;
+}
+
+.options>div {
+    color: gray;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 12px;
+    /* border: solid 1px blue; */
+}
+
+.options>div>svg {
+    margin-right: 10px;
+    color: gray;
+}

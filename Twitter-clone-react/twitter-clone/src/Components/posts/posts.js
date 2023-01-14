@@ -1,5 +1,6 @@
 import React from "react";
 import "./Posts.css";
+import NewPost from "../PostsSecComp/NewPost/NewPost";
 
 function Posts() {
   return (
@@ -219,6 +220,9 @@ function Posts() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="post-section">
+        <NewPost />
       </div>
       <div className="post-section">
         <div className="postcontainer">
