@@ -113,11 +113,25 @@ a {
     padding-left: 10px;
 }
 
-.people-desc>p {
+.people-desc>div {
+    display: flex;
+    /* border: solid 1px blue; */
+}
+
+.people-desc>div>p {
+    /* border: solid 1px green; */
     font-size: 16px;
     margin: 0;
     padding: 0;
 }
+
+.bluetick {
+    /* border: solid 1px purple; */
+    margin: 4px;
+    color: #1E8DD8;
+}
+
+
 
 .people-desc>p:last-child {
     margin-top: -5px;

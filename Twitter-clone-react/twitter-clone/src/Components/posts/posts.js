@@ -110,10 +110,10 @@ function Posts() {
                 width="16"
                 height="16"
                 fill="currentColor"
-                className="bi bi-check-circle-fill"
+                class="bi bi-patch-check-fill bluetick"
                 viewBox="0 0 16 16"
               >
-                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
               </svg>
               <a href="">@freeCodeCamp</a>
               <p>3h</p>
@@ -224,30 +224,40 @@ function Posts() {
         <div className="postcontainer">
           <div className="col-1 profilephoto ">
             <img
-              src="https://pbs.twimg.com/profile_images/1537745557594296322/PuNSZ2Ti_400x400.jpg"
+              src="https://pbs.twimg.com/profile_images/1562753500726976514/EPSUNyR3_400x400.jpg"
               alt=""
             />
           </div>
           <div className="col-11 newpost">
             <div className="profilename">
-              Will Macpherson
+              Virat Kohli
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
                 fill="currentColor"
-                className="bi bi-check-circle-fill"
+                class="bi bi-patch-check-fill bluetick"
                 viewBox="0 0 16 16"
               >
-                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
               </svg>
-              <a href="">@willis_macp</a>
-              <p>18h</p>
+              <a href="">@imVkohli</a>
+              <p>23h</p>
             </div>
             <div className="postdesc">
-              Love this Pakistan team, love Pakistan cricket. Incredible
-              contribution to the tournament, and a seriously exciting young
-              team.
+              <p>
+                Hardly drive, don't drive because of WFH, extra cars or old
+                cars? Now, with <a href="">@heydigit</a> Pay As You Drive, agar
+                aapki car chale kam toh premium bhi kam!
+              </p>
+              <p>Phir Digit Dance toh banta hai, right?</p>
+              <a href="">#digitdance #digitcarinsurance #ad</a>
+              <div className="additionalupload">
+                <img
+                  src="https://pbs.twimg.com/media/FmSKu-raMAIq_V0?format=jpg&name=large"
+                  alt=""
+                />
+              </div>
             </div>
             <div className="options">
               <div className="comment col-2">
@@ -342,10 +352,10 @@ function Posts() {
                 width="16"
                 height="16"
                 fill="currentColor"
-                className="bi bi-check-circle-fill"
+                class="bi bi-patch-check-fill bluetick"
                 viewBox="0 0 16 16"
               >
-                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
               </svg>
               <a href="">@willis_macp</a>
               <p>18h</p>
@@ -436,30 +446,35 @@ function Posts() {
         <div className="postcontainer">
           <div className="col-1 profilephoto ">
             <img
-              src="https://pbs.twimg.com/profile_images/1537745557594296322/PuNSZ2Ti_400x400.jpg"
+              src="https://pbs.twimg.com/profile_images/1565985672501927936/d-r-h241_400x400.jpg"
               alt=""
             />
           </div>
           <div className="col-11 newpost">
             <div className="profilename">
-              Will Macpherson
+              Narendra Modi
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
                 fill="currentColor"
-                className="bi bi-check-circle-fill"
+                class="bi bi-patch-check-fill bluetick"
                 viewBox="0 0 16 16"
               >
-                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
               </svg>
-              <a href="">@willis_macp</a>
-              <p>18h</p>
+              <a href="">@narendramodi</a>
+              <p>19m</p>
             </div>
             <div className="postdesc">
-              Love this Pakistan team, love Pakistan cricket. Incredible
-              contribution to the tournament, and a seriously exciting young
-              team.
+              Greetings on Uttarayan. May there be abundance of joy in our
+              lives.
+            </div>
+            <div className="additionalupload">
+              <img
+                src="https://pbs.twimg.com/media/FmZ0xZsacAIqNda?format=jpg&name=small"
+                alt=""
+              />
             </div>
             <div className="options">
               <div className="comment col-2">
