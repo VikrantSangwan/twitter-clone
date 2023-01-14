@@ -1,0 +1,66 @@
+.tofollow {
+    display: flex;
+    width: 100%;
+    padding: 0 !important;
+    margin-top: 20px;
+}
+
+.tofollowimg {
+    display: flex;
+    align-items: flex-start;
+    justify-self: center;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.tofollowimg>img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.people-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-self: center;
+    padding-left: 10px;
+}
+
+.people-desc>div {
+    display: flex;
+    /* border: solid 1px blue; */
+}
+
+.people-desc>div>p {
+    /* border: solid 1px green; */
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.bluetick {
+    /* border: solid 1px purple; */
+    margin: 4px;
+    color: #1E8DD8;
+}
+
+.tweeterid {
+    color: #676C71;
+}
+
+.people-desc>p:last-child {
+    margin-top: -5px;
+    color: gray;
+}
+
+.follow-btn {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.peoplefollowbtn {
+    font-size: 16px;
+    padding: 4px 20px;
+    border-radius: 20px;
+    border: none;
+}

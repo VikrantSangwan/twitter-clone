@@ -16,9 +16,15 @@
 
 .fixedsearchbox {
     position: fixed;
-    width: 385px;
+    width: 420px;
     z-index: 999999;
     background-color: black;
+}
+
+@media screen and (max-width: 1400px) {
+    .fixedsearchbox {
+        width: 360px;
+    }
 }
 
 .searchbox {
@@ -27,7 +33,7 @@
     padding: 4px;
     margin: 10px 0px;
     align-items: center;
-    background-color: #404040;
+    background-color: #1D1F23;
     border-radius: 200px;
 }
 
@@ -53,102 +59,11 @@
 
 .box {
     width: 100%;
-    background-color: #404040;
+    background-color: #1D1F23;
     border-radius: 10px;
     margin: 5px;
     margin-top: 20px;
     padding: 20px;
-}
-
-.feed {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin: 20px 0px;
-}
-
-
-.feed-desc>p {
-    margin: 0;
-    font-size: 14px;
-    opacity: 0.4;
-}
-
-.feed-desc>.hashtag {
-    color: white;
-    opacity: 1;
-    font-size: 16px;
-}
-
-a {
-    text-decoration: none !important;
-    color: #1E8DD8 !important;
-}
-
-.tofollow {
-    display: flex;
-    width: 100%;
-    padding: 0 !important;
-    margin-top: 20px;
-}
-
-.tofollowimg {
-    display: flex;
-    align-items: flex-start;
-    justify-self: center;
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
-.tofollowimg>img {
-    width: 100%;
-    border-radius: 50%;
-}
-
-.people-desc {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-self: center;
-    padding-left: 10px;
-}
-
-.people-desc>div {
-    display: flex;
-    /* border: solid 1px blue; */
-}
-
-.people-desc>div>p {
-    /* border: solid 1px green; */
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-}
-
-.bluetick {
-    /* border: solid 1px purple; */
-    margin: 4px;
-    color: #1E8DD8;
-}
-
-
-
-.people-desc>p:last-child {
-    margin-top: -5px;
-    color: gray;
-}
-
-.follow-btn {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-}
-
-.peoplefollowbtn {
-    font-size: 16px;
-    padding: 4px 20px;
-    border-radius: 20px;
-    border: none;
 }
 
 .links {
