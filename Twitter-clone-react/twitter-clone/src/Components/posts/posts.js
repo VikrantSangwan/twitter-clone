@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Posts.css";
 import NewPost from "../PostsSecComp/NewPost/NewPost";
 
 function Posts() {
+  let [newpost, setnewpost] = useState([]);
+  useEffect(() => {
+    fetch("newpost.json")
+      .then((res) => res.json())
+      .then((res) => {
+        setnewpost(res);
+        console.log(newpost);
+      });
+  }, []);
+
   return (
     <div className="maincontainer">
       <div className="tweet-container">
@@ -222,7 +232,9 @@ function Posts() {
         </div>
       </div>
       <div className="post-section">
-        <NewPost />
+        {newpost.map((item, index) => (
+          <NewPost item={item} key={index} />
+        ))}
       </div>
       <div className="post-section">
         <div className="postcontainer">

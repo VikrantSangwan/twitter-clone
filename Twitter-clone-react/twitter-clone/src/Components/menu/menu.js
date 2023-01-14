@@ -1,7 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 import "./Menu.css";
 
 function Menu() {
+  const navigate = useNavigate();
+  function morebtn() {
+    navigate("/more");
+  }
   return (
     <div className="leftcontainer">
       <div className="leftbox">
@@ -109,7 +115,7 @@ function Menu() {
           </svg>
           Profile
         </div>
-        <div className="setting">
+        <div className="setting" onClick={morebtn}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"

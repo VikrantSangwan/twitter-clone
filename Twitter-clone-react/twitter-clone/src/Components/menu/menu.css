@@ -20,6 +20,10 @@
     margin: 0 !important;
 }
 
+.leftbox :hover {
+    cursor: pointer;
+}
+
 .explore,
 .logo,
 .setting {
@@ -29,6 +33,7 @@
     font-weight: 600;
     opacity: 0.8;
 }
+
 
 
 .explore>svg {

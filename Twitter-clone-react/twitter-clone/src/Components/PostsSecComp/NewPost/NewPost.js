@@ -1,18 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./NewPost.css";
-function NewPost() {
+
+function NewPost(props) {
+  console.log(props.item);
+  let postdescription = props.item.postdesc;
+
   return (
     <>
       <div className="postcontainer">
         <div className="col-1 profilephoto ">
-          <img
-            src="https://pbs.twimg.com/profile_images/1276770212927410176/qTgTIejk_400x400.jpg"
-            alt=""
-          />
+          <img src={props.item.profileimg} alt="" />
         </div>
         <div className="col-11 newpost">
           <div className="profilename">
-            freeCodeCamp.org
+            {props.item.profilename}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -23,33 +24,30 @@ function NewPost() {
             >
               <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
             </svg>
-            <a href="">@freeCodeCamp</a>
-            <p>3h</p>
+            <a href="">{props.item.tweetid}</a>
+            <p>{props.item.posttime}</p>
           </div>
           <div className="postdesc">
-            Unreal Engine is a popular game engine you can use to build your own
-            games.
-            <br />
-            <br /> And this course will help you get started with it from the
-            basics. <br />
-            <br />
-            You'll build your own endless runner game & learn about Blueprints,
-            modeling tools, coding in C++, & more.
-            <div className="additionalupload">
-              <img
-                src="https://www.freecodecamp.org/news/content/images/size/w2000/2023/01/ue3.png"
-                alt=""
-              />
-              <div className="adiditionaluploaddesc">
-                <p>freecodecamp.org</p>
-                <h6>Developing Games Using Unreal Engine 6</h6>
-                <p>
-                  Unreal Engine 5 is a powerful game engine that has been used
-                  to create some of the most popular and critically acclaimed
-                  games in recent years.
-                </p>
+            {props.item.postdesc}
+            {props.item.additionalupload && (
+              <div className="additionalupload">
+                <img src={props.item.additionalupload.postimg} alt="" />
+                <div className="adiditionaluploaddesc">
+                  <p>
+                    {
+                      props.item.additionalupload.adiditionaluploaddesc
+                        .tweetowner
+                    }
+                  </p>
+                  <h6>
+                    {props.item.additionalupload.adiditionaluploaddesc.title}
+                  </h6>
+                  <p>
+                    {props.item.additionalupload.adiditionaluploaddesc.desc}
+                  </p>
+                </div>
               </div>
-            </div>
+            )}
           </div>
           <div className="options">
             <div className="comment col-2">

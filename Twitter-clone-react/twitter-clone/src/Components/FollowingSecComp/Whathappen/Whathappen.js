@@ -2,7 +2,6 @@ import React from "react";
 import "./Whathappen.css";
 
 function whathappen(props) {
-  console.log(props.item);
   return (
     <div className="feed">
       <div className="feed-desc">

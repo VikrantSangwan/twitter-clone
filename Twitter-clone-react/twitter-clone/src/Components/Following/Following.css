@@ -16,7 +16,7 @@
 
 .fixedsearchbox {
     position: fixed;
-    width: 420px;
+    width: 390px;
     z-index: 999999;
     background-color: black;
 }
