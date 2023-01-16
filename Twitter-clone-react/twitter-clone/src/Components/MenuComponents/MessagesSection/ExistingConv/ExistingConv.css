@@ -1,0 +1,31 @@
+.convcontainer {
+    height: 100vh;
+    border-left: solid 1px #353935;
+    padding: 16px;
+}
+
+.topconatiner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topconatiner>p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.msgicons>svg {
+    margin-left: 20px;
+}
+
+.writeamsgcontainer {
+    padding: 15px;
+}
+
+.writeamsg {
+    background-color: #1A8CD8;
+    padding: 15px 40px;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+}

@@ -1,0 +1,12 @@
+.newmsgcontainer {
+    height: 100vh;
+    border-left: solid 1px #353935;
+    border-right: solid 1px #353935;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.minicontainer {
+    padding: 100px;
+}
