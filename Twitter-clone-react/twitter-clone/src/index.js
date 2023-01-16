@@ -6,6 +6,12 @@ import More from "./Pages/More/More";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import Messages from "./Pages/Messages/Messages";
+import List from "./Pages/List/List";
+import Profile from "./Pages/Profile/Profile";
+import Explore from "./Pages/Explore/Explore";
+import Notifications from "./Pages/Notifications/Notifications";
+import Bookmark from "./Pages/Bookmark/Bookmark";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -14,6 +20,12 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/more" element={<More />} />
+        <Route path="/messages" element={<Messages />} />
+        <Route path="/list" element={<List />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/explore" element={<Explore />} />
+        <Route path="/notifications" element={<Notifications />} />
+        <Route path="/bookmarks" element={<Bookmark />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 import "./Menu.css";
@@ -6,8 +6,9 @@ import "./Menu.css";
 function Menu() {
   const navigate = useNavigate();
 
-  function morebtn() {
-    navigate("/more");
+  function navigatingbtn(page) {
+    console.log(page);
+    navigate(page);
   }
 
   return (
@@ -25,7 +26,20 @@ function Menu() {
             <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
           </svg>
         </div>
-        <div className="explore">
+        <div className="setting" onClick={() => navigate("/")}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            class="bi bi-house"
+            viewBox="0 0 16 16"
+          >
+            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z" />
+          </svg>
+          Home
+        </div>
+        <div className="explore" onClick={() => navigate("/explore")}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
@@ -38,20 +52,7 @@ function Menu() {
           </svg>
           Explore
         </div>
-        <div className="setting">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="currentColor"
-            className="bi bi-gear-fill settings"
-            viewBox="0 0 16 16"
-          >
-            <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
-          </svg>
-          Settings
-        </div>
-        <div className="setting">
+        <div className="setting" onClick={() => navigate("/notifications")}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -64,7 +65,7 @@ function Menu() {
           </svg>
           Notifications
         </div>
-        <div className="setting">
+        <div className="setting" onClick={() => navigate("/messages")}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -77,7 +78,7 @@ function Menu() {
           </svg>
           Messages
         </div>
-        <div className="setting">
+        <div className="setting" onClick={() => navigate("/bookmarks")}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -90,7 +91,7 @@ function Menu() {
           </svg>
           Bookmarks
         </div>
-        <div className="setting">
+        <div className="setting" onClick={() => navigate("/list")}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -104,7 +105,7 @@ function Menu() {
           </svg>
           List
         </div>
-        <div className="setting">
+        <div className="setting" onClick={() => navigate("/profile")}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -117,7 +118,7 @@ function Menu() {
           </svg>
           Profile
         </div>
-        <div className="setting" onClick={morebtn}>
+        <div className="setting" onClick={() => navigate("/more")}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
