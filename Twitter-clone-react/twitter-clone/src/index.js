@@ -21,7 +21,7 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="/more" element={<More />} />
         <Route path="/messages" element={<Messages />} />
-        <Route path="/list" element={<List />} />
+        <Route path="/lists" element={<List />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/explore" element={<Explore />} />
         <Route path="/notifications" element={<Notifications />} />

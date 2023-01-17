@@ -1,0 +1,29 @@
+.listcontainer {
+    height: 100vh;
+    margin: 0px 10px;
+    border-left: solid 1px #353935;
+    border-right: solid 1px #353935;
+    padding: 16px;
+}
+
+.listtopcontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.listtoptitle {
+    align-items: center;
+    justify-content: center;
+}
+
+.listtoptitle>p {
+    margin: 0 !important;
+}
+
+.backbtn {
+    background-color: transparent;
+    opacity: 1;
+    color: none;
+    padding: 0 !important;
+    margin: 0 !important;
+}

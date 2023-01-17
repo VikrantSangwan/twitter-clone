@@ -1,20 +1,19 @@
 import React from "react";
-import Following from "../../Components/Following/Following";
 import Menu from "../../Components/Menu/Menu";
 import ExistingConv from "../../Components/MenuComponents/MessagesSection/ExistingConv/ExistingConv";
-import MessagesSection from "../../Components/MenuComponents/MessagesSection/MessagesSection";
 import NewMessage from "../../Components/MenuComponents/MessagesSection/NewMessage/NewMessage";
+import "./Messages.css";
 
 function Messages() {
   return (
     <div className="home">
-      <div style={{ width: "10%" }}>
+      <div className="msgcontainer-1">
         <Menu />
       </div>
-      <div style={{ width: "20%" }}>
+      <div className="msgcontainer-2">
         <ExistingConv />
       </div>
-      <div style={{ width: "30%" }}>
+      <div className="msgcontainer-3">
         <NewMessage />
       </div>
     </div>
