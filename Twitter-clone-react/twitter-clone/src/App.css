@@ -29,16 +29,20 @@
 
 @media screen and (max-width: 1400px) {
   .menu-width {
-    width: 25%;
+    width: 20%;
   }
 
   .posts-width {
-    width: 48%;
+    width: 45%;
   }
 
   .following-width {
-    width: 32%;
+    width: 30%;
     align-items: center;
   }
 
+}
+
+svg {
+  cursor: pointer;
 }

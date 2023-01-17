@@ -3,12 +3,13 @@
     flex-direction: column;
     align-items: flex-start;
     margin: 0 !important;
-    padding-left: 60px;
+
 }
 
 @media screen and (min-width:1400px) {
     .leftcontainer {
         align-items: flex-end;
+        padding-left: 60px;
     }
 }
 
