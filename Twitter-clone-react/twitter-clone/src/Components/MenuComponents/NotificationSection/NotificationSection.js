@@ -1,13 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./NotificationSection.css";
 import All from "../NotificationsTab/All/All";
+import Verified from "../NotificationsTab/Verified/Verified";
+import Mentions from "../NotificationsTab/Mentions/Mentions";
 
 function NotificationSection() {
-  function Handletabbtn(tabnum) {
-    if (tabnum == 1) {
-      return <All />;
-    }
-  }
+  let [element, setelement] = useState(<All />);
 
   return (
     <div className="notificationcontainer">
@@ -27,23 +25,33 @@ function NotificationSection() {
         </div>
         <div className="notificationtabs">
           <div>
-            <button className="notificationtab" onClick={() => Handletabbtn(1)}>
+            <button
+              className="notificationtab"
+              onClick={() => setelement(<All />)}
+            >
               All
             </button>
           </div>
           <div>
-            <button className="notificationtab">Verified</button>
+            <button
+              className="notificationtab"
+              onClick={() => setelement(<Verified />)}
+            >
+              Verified
+            </button>
           </div>
           <div>
-            <button className="notificationtab">Mentions</button>
+            <button
+              className="notificationtab"
+              onClick={() => setelement(<Mentions />)}
+            >
+              Mentions
+            </button>
           </div>
         </div>
       </div>
       <div className="notificationsubcontainer">
-        <div className="tabsubcontainer">
-          <Handletabbtn />
-          {console.log(<Handletabbtn />)}
-        </div>
+        <div className="tabsubcontainer">{element}</div>
       </div>
     </div>
   );
