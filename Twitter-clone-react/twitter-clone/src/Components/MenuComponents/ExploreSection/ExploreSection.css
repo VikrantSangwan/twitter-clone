@@ -1,0 +1,62 @@
+.explorecontainer {
+    border-left: solid 1px #353935;
+    border-right: solid 1px #353935;
+    height: 100vh;
+    width: 100%;
+}
+
+.exploresubcontainer {
+    position: fixed;
+    border-bottom: solid 1px #353935;
+}
+
+.exploretoppanel {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.exploresearchbox {
+    display: flex;
+    align-items: center;
+    background-color: #1D1F23;
+    border-radius: 200px;
+}
+
+.exploresearchbox>svg {
+    margin: 10px;
+    width: 10%;
+    opacity: 0.6;
+}
+
+.exploresearchbox>input {
+    color: white;
+    padding: 8px;
+    width: 90%;
+    border-radius: 200px;
+    background-color: inherit;
+    border: none;
+    outline: none;
+}
+
+.exploretabwrapper {
+    margin-bottom: 10px;
+    margin: 0px 15px;
+}
+
+.exploretabs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.exploretab {
+    padding: 10px 20px;
+    width: 100%;
+    background-color: transparent;
+    color: #71767B;
+}
+
+.exploretab:hover {
+    background-color: #353935;
+}
