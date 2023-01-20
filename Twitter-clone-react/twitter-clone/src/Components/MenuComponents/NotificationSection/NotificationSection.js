@@ -24,7 +24,7 @@ function NotificationSection() {
           </svg>
         </div>
         <div className="notificationtabs">
-          <div>
+          <div className="notificationtabwrapper">
             <button
               className="notificationtab"
               onClick={() => setelement(<All />)}
@@ -32,7 +32,7 @@ function NotificationSection() {
               All
             </button>
           </div>
-          <div>
+          <div className="notificationtabwrapper">
             <button
               className="notificationtab"
               onClick={() => setelement(<Verified />)}
@@ -40,7 +40,7 @@ function NotificationSection() {
               Verified
             </button>
           </div>
-          <div>
+          <div className="notificationtabwrapper">
             <button
               className="notificationtab"
               onClick={() => setelement(<Mentions />)}

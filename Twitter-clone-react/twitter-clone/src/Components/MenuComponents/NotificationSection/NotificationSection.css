@@ -5,11 +5,11 @@
 }
 
 .notificationsubcontainer {
-    padding: 16px;
     border-bottom: 1px solid #353935;
 }
 
 .notitoppanel {
+    padding: 16px;
     display: flex;
     justify-content: space-between;
 }
@@ -22,11 +22,21 @@
 .notificationtabs {
     display: flex;
     justify-content: space-between;
-    padding: 0px 40px;
-    padding-top: 10px;
+
+}
+
+.notificationtabwrapper {
+    width: 33.33%;
 }
 
 .notificationtab {
+    padding: 10px 0px;
+    width: 100%;
+    margin: 0 !important;
     background-color: transparent;
     color: #71767B;
+}
+
+.notificationtab:hover {
+    background-color: #353935;
 }
