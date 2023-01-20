@@ -5,7 +5,7 @@
     width: 100%;
 }
 
-.exploresubcontainer {
+.explorefixcontainer {
     position: fixed;
     border-bottom: solid 1px #353935;
 }
@@ -41,7 +41,6 @@
 }
 
 .exploretabwrapper {
-    margin-bottom: 10px;
     margin: 0px 15px;
 }
 
@@ -59,4 +58,9 @@
 
 .exploretab:hover {
     background-color: #353935;
+}
+
+.exploredesccontainer {
+    margin-top: 120px;
+    padding: 16px;
 }

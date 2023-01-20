@@ -1,0 +1,15 @@
+.exploresubsectioncontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.exploretrend,
+.exploretweetcount {
+    color: #71767B;
+    font-size: 14px;
+}
+
+.explorehashtag {
+    font-weight: 800;
+    font-size: 16px;
+}

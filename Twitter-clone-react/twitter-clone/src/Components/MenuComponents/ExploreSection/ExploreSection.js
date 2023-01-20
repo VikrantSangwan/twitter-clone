@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ExploreSection.css";
+import Foryou from "../ExploreSectionComp/Foryou/Foryou";
+import Trending from "../ExploreSectionComp/Trending/Trending";
+import News from "../ExploreSectionComp/News/News";
+import Sports from "../ExploreSectionComp/Sports/Sports";
+import Entertainment from "../ExploreSectionComp/Entertainment/Entertainment";
 
 function ExploreSection() {
+  let [element, setelement] = useState(<Foryou />);
+
   return (
     <div className="explorecontainer">
-      <div className="exploresubcontainer">
+      <div className="explorefixcontainer">
         <div className="exploretoppanel">
           <div className="col-11 explorefixsearchbox">
             <div className="exploresearchbox">
@@ -37,22 +44,45 @@ function ExploreSection() {
         </div>
         <div className="exploretabs">
           <div className="exploretabwrapper">
-            <button className="exploretab">For You</button>
+            <button
+              className="exploretab"
+              onClick={() => setelement(<Foryou />)}
+            >
+              For You
+            </button>
           </div>
           <div className="exploretabwrapper">
-            <button className="exploretab">Trending</button>
+            <button
+              className="exploretab"
+              onClick={() => setelement(<Trending />)}
+            >
+              Trending
+            </button>
           </div>
           <div className="exploretabwrapper">
-            <button className="exploretab">News</button>
+            <button className="exploretab" onClick={() => setelement(<News />)}>
+              News
+            </button>
           </div>
           <div className="exploretabwrapper">
-            <button className="exploretab">Sports</button>
+            <button
+              className="exploretab"
+              onClick={() => setelement(<Sports />)}
+            >
+              Sports
+            </button>
           </div>
           <div className="exploretabwrapper">
-            <button className="exploretab">Entertainment</button>
+            <button
+              className="exploretab"
+              onClick={() => setelement(<Entertainment />)}
+            >
+              Entertainment
+            </button>
           </div>
         </div>
       </div>
+      <div className="exploredesccontainer">{element}</div>
     </div>
   );
 }
