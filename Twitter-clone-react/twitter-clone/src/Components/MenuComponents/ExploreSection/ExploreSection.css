@@ -1,13 +1,14 @@
 .explorecontainer {
     border-left: solid 1px #353935;
     border-right: solid 1px #353935;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
 
 .explorefixcontainer {
-    position: fixed;
-    border-bottom: solid 1px #353935;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .exploretoppanel {
@@ -40,27 +41,32 @@
     outline: none;
 }
 
-.exploretabwrapper {
-    margin: 0px 15px;
-}
-
-.exploretabs {
+.exploretabscontainer {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #1D1F23;
 }
+
+.exploretabwrapper {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    /* border: 1px solid red; */
+}
+
 
 .exploretab {
-    padding: 10px 20px;
-    width: 100%;
+    padding: 8px 0px;
     background-color: transparent;
     color: #71767B;
+    border: none !important;
 }
 
-.exploretab:hover {
+.exploretabwrapper:hover {
     background-color: #353935;
 }
 
 .exploredesccontainer {
-    margin-top: 120px;
     padding: 16px;
 }

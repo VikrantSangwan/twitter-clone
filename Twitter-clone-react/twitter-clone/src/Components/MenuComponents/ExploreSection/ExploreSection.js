@@ -8,6 +8,10 @@ import Entertainment from "../ExploreSectionComp/Entertainment/Entertainment";
 
 function ExploreSection() {
   let [element, setelement] = useState(<Foryou />);
+  let [notification, setnotification] = useState([]);
+  fetch("notification.json")
+    .then((res) => res.json())
+    .then((res) => setnotification(res));
 
   return (
     <div className="explorecontainer">
@@ -42,7 +46,7 @@ function ExploreSection() {
             </svg>
           </div>
         </div>
-        <div className="exploretabs">
+        <div className="exploretabscontainer">
           <div className="exploretabwrapper">
             <button
               className="exploretab"
@@ -82,7 +86,14 @@ function ExploreSection() {
           </div>
         </div>
       </div>
-      <div className="exploredesccontainer">{element}</div>
+      <div className="exploredesccontainer">
+        {element}
+        {console.log(element)}
+        {notification.map((notif_element) => {
+          if (notif_element.category === "Foryou") {
+          }
+        })}
+      </div>
     </div>
   );
 }

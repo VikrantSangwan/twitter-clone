@@ -1,7 +1,7 @@
 .notificationcontainer {
     border-left: solid 1px #353935;
     border-right: solid 1px #353935;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .notificationsubcontainer {

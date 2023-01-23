@@ -1,0 +1,133 @@
+.profilecontainer {
+    border-left: solid 1px #353935;
+    border-right: solid 1px #353935;
+    min-height: 100vh;
+}
+
+.profiletopcontainer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 5px 16px;
+}
+
+.profilecontainer>div>div {
+    /* border: solid 1px red; */
+}
+
+.profiletopcontainer>div>button {
+    background-color: transparent;
+}
+
+.profiletoptext>p {
+    margin: 0;
+    font-size: 14px;
+    color: #71767B;
+}
+
+.profiletoptext>p:first-child {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    opacity: 0.8;
+}
+
+.profileimgcontainer {
+    max-height: 300px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.profileimgcontainer>img {
+    width: 100%;
+}
+
+.profiledesccontainer {
+    /* border: solid 1px blue; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.profilephoto {
+    padding: 0px 10px;
+}
+
+.profilephoto>button {
+    background-color: white;
+    font-size: 68px;
+    padding: 20px 50px;
+    border-radius: 50%;
+    border: solid 4px black;
+    margin-top: -150px;
+    font-weight: 600;
+}
+
+.profilephoto>button:hover {
+    background-color: #F0F0F0;
+}
+
+.profileeditbtn {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+
+}
+
+.profileeditbtn>button {
+    background-color: transparent;
+    padding: 0px 25px;
+    color: white;
+    border: solid 1px #71767B;
+    border-radius: 50px;
+}
+
+.profileeditbtn>button:hover {
+    background-color: #16181C;
+}
+
+.profiledescsubscontainer {
+    padding: 16px;
+}
+
+.profiledescsubscontainer>div>p {
+    margin: 0;
+}
+
+.profiledescsubscontainer>div>p:first-child {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    opacity: 0.9;
+}
+
+.profiledescsubscontainer>div>p:nth-child(2) {
+    color: #71767B;
+}
+
+.profiledescsubscontainer>div>p:last-child {
+    margin-top: 15px;
+}
+
+.profiledescsubscontainer>div>p:last-child>svg {
+    margin-right: 10px;
+}
+
+.connection {
+    display: flex;
+    align-content: center;
+    margin-top: 10px;
+}
+
+.connection>div {
+    display: flex;
+    margin-right: 30px;
+}
+
+.connection>div>p {
+    margin: 0;
+    margin-right: 10px;
+}
+
+.connection>div>span {
+    color: #71767B;
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "category": "Foryou",
+    "hashtag": "#Numbersfall",
+    "tweetcount": "18.9K",
+    "subcategory": "Mathematics"
+  },
+  {
+    "category": "Trending",
+    "hashtag": "#JohnWick 4",
+    "tweetcount": "98.9K",
+    "subcategory": "Movies"
+  },
+  {
+    "category": "Sports",
+    "hashtag": "#KingKholi",
+    "tweetcount": "12.5K",
+    "subcategory": "Cricket"
+  },
+  {
+    "category": "Entertainment",
+    "hashtag": "#PeopleElectionFrance",
+    "tweetcount": "19.7K",
+    "subcategory": "PeopleElection"
+  },
+  {
+    "category": "News",
+    "hashtag": "#PeopleRiseAgain",
+    "tweetcount": "19.4K",
+    "subcategory": "Today's News"
+  }
+]

@@ -2,7 +2,7 @@
     border-left: solid 1px #353935;
     border-right: solid 1px #353935;
     padding: 5px 16px;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .bookmarktopcont>div>p {

@@ -1,5 +1,5 @@
 .listcontainer {
-    height: 100vh;
+    min-height: 100vh;
     margin: 0px 10px;
     border-left: solid 1px #353935;
     border-right: solid 1px #353935;
