@@ -1,7 +1,20 @@
 import React from "react";
 import "./ProfileSection.css";
+import Tweetsreplies from "../ProfileSectionComp/Tweetsreplies/Tweetsreplies";
 
 function ProfileSection() {
+  function handleclickbtn(name) {
+    switch (name) {
+      // case "Tweets":
+      //   return <Tweets />;
+      case "Tweets&replies":
+        return console.log(<Tweetsreplies />);
+      // case "Media":
+      //   return <Media />;
+      // case "Likes":
+      //   return <Likes />;
+    }
+  }
   return (
     <div className="profilecontainer">
       <div className="profiletopcontainer">
@@ -71,7 +84,41 @@ function ProfileSection() {
           </div>
         </div>
       </div>
-      <div className="profiletweetcontainer"></div>
+      <div className="profiletweetcontainer">
+        <div
+          className="col-3"
+          onClick={() => {
+            handleclickbtn("Tweets");
+          }}
+        >
+          Tweets
+        </div>
+        <div
+          className="col-3"
+          onClick={() => {
+            handleclickbtn("Tweets&replies");
+          }}
+        >
+          Tweets & replies
+        </div>
+        <div
+          className="col-3"
+          onClick={() => {
+            handleclickbtn("Media");
+          }}
+        >
+          Media
+        </div>
+        <div
+          className="col-3"
+          onClick={() => {
+            handleclickbtn("Likes");
+          }}
+        >
+          Likes
+        </div>
+      </div>
+      <div>{handleclickbtn()}</div>
     </div>
   );
 }

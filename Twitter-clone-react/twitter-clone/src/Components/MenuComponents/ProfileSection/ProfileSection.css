@@ -131,3 +131,18 @@
 .connection>div>span {
     color: #71767B;
 }
+
+.profiletweetcontainer {
+    display: flex;
+    /* border: solid 1px red; */
+    border-bottom: 1px solid #353935;
+}
+
+.profiletweetcontainer>div {
+    /* border: solid 1px blue; */
+    padding: 10px 0px;
+    text-align: center;
+    color: #71767B;
+    font-weight: 600;
+    cursor: pointer;
+}
