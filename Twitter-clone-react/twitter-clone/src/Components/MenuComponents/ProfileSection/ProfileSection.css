@@ -11,9 +11,6 @@
     padding: 5px 16px;
 }
 
-.profilecontainer>div>div {
-    /* border: solid 1px red; */
-}
 
 .profiletopcontainer>div>button {
     background-color: transparent;
@@ -145,4 +142,8 @@
     color: #71767B;
     font-weight: 600;
     cursor: pointer;
+}
+
+.profilecategory {
+    border: solid 2px red;
 }

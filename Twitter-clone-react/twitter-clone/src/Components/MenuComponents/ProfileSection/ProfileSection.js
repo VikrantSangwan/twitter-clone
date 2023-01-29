@@ -1,20 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ProfileSection.css";
 import Tweetsreplies from "../ProfileSectionComp/Tweetsreplies/Tweetsreplies";
 
 function ProfileSection() {
-  function handleclickbtn(name) {
-    switch (name) {
-      // case "Tweets":
-      //   return <Tweets />;
-      case "Tweets&replies":
-        return console.log(<Tweetsreplies />);
-      // case "Media":
-      //   return <Media />;
-      // case "Likes":
-      //   return <Likes />;
-    }
-  }
+  let [element, setelement] = useState(<Tweetsreplies />);
+
   return (
     <div className="profilecontainer">
       <div className="profiletopcontainer">
@@ -29,7 +19,7 @@ function ProfileSection() {
               viewBox="0 0 16 16"
             >
               <path
-                fillRule="evenodd"
+                fillEule="evenodd"
                 d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
               />
             </svg>
@@ -85,40 +75,19 @@ function ProfileSection() {
         </div>
       </div>
       <div className="profiletweetcontainer">
-        <div
-          className="col-3"
-          onClick={() => {
-            handleclickbtn("Tweets");
-          }}
-        >
+        <div className="col-3" onClick={() => setelement(<Tweets />)}>
           Tweets
         </div>
-        <div
-          className="col-3"
-          onClick={() => {
-            handleclickbtn("Tweets&replies");
-          }}
-        >
+        <div className="col-3" onClick={() => setelement(<Tweetsreplies />)}>
           Tweets & replies
         </div>
-        <div
-          className="col-3"
-          onClick={() => {
-            handleclickbtn("Media");
-          }}
-        >
+        <div className="col-3" onClick={() => setelement(<Media />)}>
           Media
         </div>
-        <div
-          className="col-3"
-          onClick={() => {
-            handleclickbtn("Likes");
-          }}
-        >
+        <div className="col-3" onClick={() => setelement(<Likes />)}>
           Likes
         </div>
       </div>
-      <div>{handleclickbtn()}</div>
     </div>
   );
 }

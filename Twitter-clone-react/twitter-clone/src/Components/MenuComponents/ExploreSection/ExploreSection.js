@@ -86,14 +86,7 @@ function ExploreSection() {
           </div>
         </div>
       </div>
-      <div className="exploredesccontainer">
-        {element}
-        {console.log(element)}
-        {notification.map((notif_element) => {
-          if (notif_element.category === "Foryou") {
-          }
-        })}
-      </div>
+      <div className="exploredesccontainer">{element}</div>
     </div>
   );
 }
